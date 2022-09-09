@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid header-bg">
+      <div class="row">
+        <div class="col-lg-6 logo">
+          <img src="img/logo.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-3 offset-lg-3">
+          <img src="img/emblem.png" class="emblem img-fluid" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 p-0 mini-head">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white fw-bold" aria-current="page" href="#"><span>Home</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#"><span>Dashboard</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#">About
+                      Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#">What
+                      We Do</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#">Work
+                      Structure</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#">Our
+                      Impact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#">Resource
+                      Center</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-white-50 mx-3" href="#">Join
+                      Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                  <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Login</button>
+                </form>
+
+                <!-- <form class="d-flex">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397
+                          1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0
+                          1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12
+                          6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                  </span>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="login-box">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="col-12">
+          <h5 class="modal-title text-center" id="staticBackdropLabel">Login Form</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+<div class="row">
+  <div class="col-md-6 mb-3">
+    <label for="validationDefault01" class="form-label">Name</label>
+    <input type="text" class="form-control" id="validationDefault01" name="" value="" required>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="" class="form-label">Password</label>
+    <input type="password" class="form-control" name="" value="" required>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="" class="form-label">Number</label>
+    <input type="number" class="form-control" name="" value="" required>
+  </div>
+  <div class="col-md-6 mb-3">
+    <label for="" class="form-label">Email</label>
+    <input type="email" class="form-control" name="" value="" required>
+  </div>
+  
+  <div class="col-12  text-center mb-3">
+
+    <button type="submit" class="btn btn-primary form-control">Log in</button>
+  </div>
+  <div class="col-12 mb-3 text-center">
+    <span>
+      <a href="#" class="signup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Forgotten password?</a>
+    </span>
+  </div>
+  <hr>
+  <div class="col-12  text-center mb-3">
+    <button type="button" class="btn btn-success signup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Create New Account</button>
+  </div>
+</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <div class="new-account">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="col-12 text-center">
+          <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="First Name" id="validationDefault01" name="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="Last Name" name="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="number" class="form-control" placeholder="Number" name="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="email" class="form-control" placeholder="Email" name="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="date" class="form-control" placeholder="D.O.B" name="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Others</option>
+              </select>
+            </div>
+            <div class="col-12 mb-3">
+              <input type="Password" class="form-control" placeholder="New password" name="" value="" required>
+            </div>
+            <div class="col-12">
+              <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+            </div>
+            <div class="col-12">
+              <p>
+                By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy</a>and <a href="#">Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.
+              </p>
+            </div>
+
+            <div class="col-12  text-center mb-3">
+              <button type="submit" class="btn btn-success px-5">Sign Up</button>
+            </div>
+          </div>
+                  </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- forget password modal -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="col-12">
+          <h5 class="modal-title" id="staticBackdropLabel">Find Your Account</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form action="">
+  <div class="row">
+    <div class="col-12 mb-3">
+      Please enter your email address or mobile number to search for your account.
+    </div>
+<div class="col-12 mb-3">
+  <input type="text" class="form-control" placeholder="Email address or mobile number">
+</div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+  <!-- <div id="myModal" class="modal fade top-50" style="margin-top: -200px;">
+    <div class="modal-dialog text-center" style="max-width: 1298px;">
+        <div class="modal-content">
+            <div class="modal-header"> -->
+  <!-- <div class="position-relative"><span class="position-absolute close top-0 right-0">X</span></div> -->
+  <!-- </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h2 class="fw-bold fs-1 my-5">Welcome!</h2>
+                    <p class="fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat similique mollitia illo, molestias dolores ratione quis, totam amet magnam non, ad esse vel commodi eaque in nesciunt recusandae? Molestiae voluptatibus maxime dicta id numquam reprehenderit ipsam illum labore harum, culpa a error tenetur exercitationem similique nisi provident voluptate voluptatum, earum quae dolore. Voluptatem accusamus eveniet magnam dolorum suscipit dolores nobis?</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="img/Component 99 – 2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+  <div class="w-100 d-flex flex-wrap">
+    <div class="col">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.png" class="img-fluid w-100 mt-auto" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center p-2 lorem-txt">
+          <marquee behavior="" direction="">
+            <p class="fw-500 text-capitalize my-2 fs-4">Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit. Totam ducimus ullam
+              voluptatum! Maiores, eos repellat.</p>
+          </marquee>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container mt-3">
+
+    <div class="row align-items-center bg-light text-center shadow p-3">
+      <div class="col-md-7 col-12">
+        <h4 class="mt-5 fw-bold">Welcome To DEENDAYAL ANTYODAYA YOJANA - NRML</h4>
+        <p class="mt-3 fs-5">Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Optio quos omnis repudiandae aperiam quis modi
+          corrupti, dolorem sed sint quaerat iure illum cum, consectetur nulla
+          voluptatum illo, aut rem corporis obcaecati quo commodi eius ratione
+          autem soluta tempore dolorem laudantium dolore distinctio.
+          Dignissimos repellendus, ipsam corrupti enim aliquid perspiciatis
+          similique temporibus, nesciunt, architecto blanditiis eum dolorum
+          officiis. Modi corrupti alias labore nesciunt quia. dolores dolorem.</p>
+        <div>
+          <button class="btn ms-4 d-block text-white rounded-3 btn-1">Read
+            More</button>
+        </div>
+      </div>
+      <div class="col-md-5 col-12">
+        <img src="img/Group.png" class="img-fluid" alt="">
+      </div>
+    </div>
+
+
+    <div class="row mt-5 justify-content-between">
+      <div class="col-lg-4 mb-3 bg-light shadow">
+        <h2 class="mx-3 my-3">Highlights</h2>
+        <hr>
+        <div class="ms-4">
+          <marquee behavior="" direction="up" scrollamount="5" onmouseover="this.stop();" onmouseleave="this.start();">
+            <ul class="list-unstyled" style="height: 300px;">
+              <hr>
+              <li>
+                All Donations Towards The Prime Minister's National Relief
+                Fund (PMNRF) Are Notified For 100% Deduction From Taxable
+                Income Under Section 80G.
+              </li>
+              <hr>
+              <li>NRLP Mid Term Assessment Report March 2015</li>
+              <hr>
+              <li>Presentation Made During NRLM Best Practices Workshop In
+                Delhi 22-23 Aug 2016) Day 1</li>
+              <hr>
+              <li>Presentation Made During NRLM Best Practices Workshop In
+                Delhi 22-23 Aug 2016) Day 1</li>
+              <hr>
+              <li>Presentation Made During NRLM Best Practices Workshop In
+                Delhi 22-23 Aug 2016) Day 1</li>
+              <hr>
+              <li>Presentation Made During NRLM Best Practices Workshop In
+                Delhi 22-23 Aug 2016) Day 1</li>
+              <hr>
+            </ul>
+          </marquee>
+
+        </div>
+        <div>
+          <button class="btn mt-4 mb-3 fw-bold ms-4 d-block border-danger
+              text-danger bg-light rounded-3 btn-1">View all</button>
+        </div>
+      </div>
+
+      <div class="col-lg-7 mb-3 shadow bg-light">
+        <h2 class="mx-4 my-3">What's New</h2>
+        <hr>
+        <div class="row mt-4">
+<div class="col-12">
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item bg-danger  rounded">
+      <a class="nav-link text-white active" aria-current="page" href="#">Updates</a>
+    </li>
+    <li class="nav-item bg-danger rounded">
+      <a class="nav-link text-white" href="#">Letters</a>
+    </li>
+    <li class="nav-item bg-danger rounded">
+      <a class="nav-link text-white" href="#">Tenders</a>
+    </li>
+    <li class="nav-item bg-danger rounded">
+      <a class="nav-link text-white" href="#">Events</a>
+    </li>
+    <li class="nav-item bg-danger rounded">
+      <a class="nav-link text-white" href="#">Media</a>
+    </li>
+  </ul>
+</div>
+        </div>
+
+        <div class="overflow-auto" style="height: 250px;">
+          <p class="ms-4 mt-5 fw-bold text-danger">Vacancies In National Rural
+            Livelihood Promotion Society (Mission Manager- Financial
+            Management). Last Date: 20Th September, 2021, 1700 Hrs (IST).</p>
+          <p class="ms-4 mt-3 text-muted">Lorem Ipsum Dolor Sit Amet,
+            Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut
+            Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis
+            Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+          <hr>
+          <p class="ms-4 mt-5 fw-bold text-danger">Vacancies In National Rural
+            Livelihood Promotion Society (Mission Manager- Financial
+            Management). Last Date: 20Th September, 2021, 1700 Hrs (IST).</p>
+          <p class="ms-4 mt-3 text-muted">Lorem Ipsum Dolor Sit Amet,
+            Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut
+            Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis
+            Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+          <hr>
+          <p class="ms-4 mt-5 fw-bold text-danger">Vacancies In National Rural
+            Livelihood Promotion Society (Mission Manager- Financial
+            Management). Last Date: 20Th September, 2021, 1700 Hrs (IST).</p>
+          <p class="ms-4 mt-3 text-muted">Lorem Ipsum Dolor Sit Amet,
+            Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut
+            Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis
+            Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+          <hr>
+          <p class="ms-4 mt-5 fw-bold text-danger">Vacancies In National Rural
+            Livelihood Promotion Society (Mission Manager- Financial
+            Management). Last Date: 20Th September, 2021, 1700 Hrs (IST).</p>
+          <p class="ms-4 mt-3 text-muted">Lorem Ipsum Dolor Sit Amet,
+            Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut
+            Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis
+            Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+          <hr>
+          <p class="ms-4 mt-3 fw-bold text-danger">Vacancies In National Rural
+            Livelihood Promotion Society (Mission Manager- Financial
+            Management). Last Date: 20Th September, 2021, 1700 Hrs (IST).</p>
+          <p class="ms-4 mt-3 text-muted">Lorem Ipsum Dolor Sit Amet,
+            Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut
+            Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis
+            Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+          <hr>
+        </div>
+        <button class="btn mb-3 fw-bold ms-4 d-block border-danger
+            text-danger bg-light rounded-3 btn-1" style="margin-top: 4rem;">View all</button>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="row bg-white justify-content-evenly">
+      <div class="col-12 mb-3">
+        <h2 class="text-center mt-5 mb-3 fw-bold">Media</h2>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card">
+          <div class="card-header p-0">
+            <h2 class="media-title rounded-top text-white mb-0 p-2">Video</h2>
+          </div>
+          <div class="card-body cards scrolls">
+            <div class="row mb-3 bg-white justify-content-between align-items-center rounded">
+              <div class="col-lg-6">
+                <img src="img/card1.png" class="img-fluid ms-3" alt="">
+              </div>
+              <div class="col-lg-6">
+                <p class="cards-p mt-3 ms-3">Farm Livelihoods Interventions
+                  Under DAY NRLM (Strategy, Convergence, Framework, Models)</p>
+                <p class="cards-date mt-1 ms-3">Video Published date: <span class="fw-normal">18 August,2020</span></p>
+              </div>
+            </div>
+            <div class="row mb-3 bg-white justify-content-between align-items-center rounded">
+              <div class="col-lg-6">
+                <img src="img/card1.png" class="img-fluid ms-3" alt="">
+              </div>
+              <div class="col-lg-6">
+                <p class="cards-p mt-3 ms-3">Farm Livelihoods Interventions
+                  Under DAY NRLM (Strategy, Convergence, Framework, Models)</p>
+                <p class="cards-date mt-1 ms-3">Video Published date: <span class="fw-normal">18 August,2020</span></p>
+              </div>
+            </div>
+            <div class="row mb-3 bg-white justify-content-between align-items-center rounded">
+              <div class="col-lg-6">
+                <img src="img/card1.png" class="img-fluid ms-3" alt="">
+              </div>
+              <div class="col-lg-6">
+                <p class="cards-p mt-3 ms-3">Farm Livelihoods Interventions
+                  Under DAY NRLM (Strategy, Convergence, Framework, Models)</p>
+                <p class="cards-date mt-1 ms-3">Video Published date: <span class="fw-normal">18 August,2020</span></p>
+              </div>
+            </div>
+            <div class="row mb-3 bg-white justify-content-between align-items-center rounded">
+              <div class="col-lg-6">
+                <img src="img/card1.png" class="img-fluid ms-3" alt="">
+              </div>
+              <div class="col-lg-6">
+                <p class="cards-p mt-3 ms-3">Farm Livelihoods Interventions
+                  Under DAY NRLM (Strategy, Convergence, Framework, Models)</p>
+                <p class="cards-date mt-1 ms-3">Video Published date: <span class="fw-normal">18 August,2020</span></p>
+              </div>
+            </div>
+            <div class="row mb-3 bg-white justify-content-between align-items-center rounded">
+              <div class="col-lg-6">
+                <img src="img/card1.png" class="img-fluid ms-3" alt="">
+              </div>
+              <div class="col-lg-6">
+                <p class="cards-p mt-3 ms-3">Farm Livelihoods Interventions
+                  Under DAY NRLM (Strategy, Convergence, Framework, Models)</p>
+                <p class="cards-date mt-1 ms-3">Video Published date: <span class="fw-normal">18 August,2020</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-3 mb-3">
+      <h2 class="mb-0 rounded-top media-title p-2 text-white">Facebook</h2>
+      <div class="cards px-2 rounded-bottom">
+        <img src="img/card2.png" class="img-fluid" alt="">
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <h2 class="mb-0 rounded-top media-title p-2 text-white">Twitter</h2>
+      <div class="cards px-2 rounded-bottom">
+        <img src="img/card3.png" class="img-fluid" alt="">
+      </div>
+    </div>
+</div>
+
+
+
+    <div class="row bg-light mt-5 shadow">
+      <div class="col-12 mb-3">
+        <h2 class="text-center border-danger mt-5 fw-bold">Knowledge Products</h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3">
+        <div class="card text-center" style="width: 15rem;">
+          <img src="img/ak.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <div class="card-body">
+            <h5 class="card-title mb-3">National Repository</h5>
+            <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3">
+        <div class="card text-center" style="width: 15rem;">
+          <img src="img/file-list-3-fill.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <div class="card-body">
+            <h5 class="card-title mb-3">National Repository</h5>
+            <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3">
+        <div class="card text-center" style="width: 15rem;">
+          <img src="img/email_black_24dp.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <div class="card-body">
+            <h5 class="card-title mb-3">National Repository</h5>
+            <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3">
+        <div class="card text-center" style="width: 15rem;">
+          <img src="img/auto_stories_black_24dp.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <div class="card-body">
+            <h5 class="card-title mb-3">National Repository</h5>
+            <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row mt-5 shadow bg-light">
+      <div class="col-12 mb-3">
+        <h2 class="text-center mt-5 mb-3 fw-bold">Quick Links</h2>
+      </div>
+
+      <div class="col-lg-4 mb-3">
+
+        <img src="img/img1r.png" alt="" class="img-fluid img-hover">
+      </div>
+      <div class="col-lg-4 mb-3">
+
+        <img src="img/img2.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-4 mb-3">
+
+        <img src="img/img3r.png" alt="" class="img-fluid">
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="mt-5">
+    <div class="container-fluid">
+      <div class="row footer-bg">
+        <div class="col-12 mt-3 mini-footer">
+          <ul class="d-flex justify-content-center list-unstyled mx-5 text-white">
+            <li class="me-3 pe-3"><a href="#" class="text-decoration-none text-white">RTI Act</a></li>
+            <li class="me-3 pe-3"><a href="#" class="text-decoration-none text-white">Parliament Q & A</a></li>
+            <li class="me-3 pe-3"><a href="#" class="text-decoration-none text-white">Forums</a></li>
+            <li class="me-3 pe-3"><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+            <li class="me-3 pe-3"><a href="#" class="text-decoration-none text-white">Multimedia</a></li>
+            <li class="border-0"><a href="#" class="text-decoration-none text-white">Resources</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer>
+    <div class="container-fluid ">
+      <div class="row main-footer">
+        <div class="col-lg-3 col-md-2 mt-4">
+          <img src="img/india-gov-in.png" class="ms-4 img-opacity" alt="">
+        </div>
+        <div class="col-lg-2 col-md-2 mt-4">
+          <ul class="list-unstyled footer-lh text-white-50">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Copyright Policy</li>
+            <li>Hyperlink Property</li>
+            <li>Disclamier</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mt-4">
+          <ul class="list-unstyled footer-lh text-white-50">
+            <li>Accessibility Statement</li>
+            <li>Contact CEO</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-2 mt-4">
+          <ul class="list-unstyled footer-lh text-white-50">
+            <li class="text-white">Contact Us</li>
+            <li>Deendayal Antyodaya yojana-</li>
+            <li> National Rural Livelihoods Mission(DAY-NRLM)</li>
+            <li>Ministry Of Rural Development- Govt. Of India</li>
+            <li>7th Floor, NDCC Building-II, Jai Singh Road</li>
+            <li>New Delhi - 110001</li>
+            <li>Phone : 011-23461708</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 mt-4 mb-4 align-self-end">
+          <ul class="list-unstyled footer-lh text-white mb-lg-0">
+            <li class="">Connect with us at:</li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="img/facebook-fill.png" class="bg-white rounded-circle img-opacity" style="height:35px; width:35px;" alt="">
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="img/youtube-fill.png" class="bg-white rounded-circle img-opacity" style="height:35px; width:35px;" alt="">
+              </a>
+              <a href="https://www.twitter.com/" target="_blank">
+                <img src="img/twitter-fill.png" class="bg-white rounded-circle img-opacity" style="height:35px; width:35px;" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <script>
+    // $(document).ready(function () {
+    //   $("#myModal").modal('show');
+    // });
+
+    $(document).ready(function(){
+      $(".signup-btn").on('click',()=>{
+        $("#staticBackdrop1").modal("toggle");
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
