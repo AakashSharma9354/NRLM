@@ -9,98 +9,85 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="./dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="./dist/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
+
   <header>
     <div class="container-fluid header-bg">
-      <div class="row">
-        <div class="col-lg-6 logo">
-          <img src="img/logo.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-3 offset-lg-3">
-          <img src="img/emblem.png" class="emblem img-fluid" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 p-0 mini-head">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+<div class="main-header mb-3">
+  <div class="row">
+    <div class="col-md-6 col-12 logo">
+      <img src="img/logo.png" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-3 col-12 offset-md-3">
+      <img src="img/emblem.png" class="emblem img-fluid" alt="">
+    </div>
+  </div>
+</div>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white fw-bold" aria-current="page" href="#"><span>Home</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#"><span>Dashboard</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#">About
-                      Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#">What
-                      We Do</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#">Work
-                      Structure</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#">Our
-                      Impact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#">Resource
-                      Center</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-white-50 mx-3" href="#">Join
-                      Us</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                  <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Login</button>
-                </form>
-
-                <!-- <form class="d-flex">
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-search" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397
-                          1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0
-                          1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12
-                          6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                  </span>
-                </form> -->
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
+<div class="sub-header">
+  <div class="row">
+    <div class="col-lg-12 p-0 mini-head">
+      <nav class="navbar navbar-expand-lg navbar-light px-5">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#"><span>Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#"><span>Dashboard</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#">Work Structure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#">Our Impact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#">Resource Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50 mx-3" href="#">JoinUs</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Login</button>
+            </form>
+          </div>
+      </nav>
+    </div>
+  </div>
+</div>
     </div>
   </header>
 
-  <div class="login-box">
-<!-- Modal -->
+<!-- Login Modal -->
+
 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="col-12">
+        <div class="col-10">
           <h5 class="modal-title text-center" id="staticBackdropLabel">Login Form</h5>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-2 text-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </div>
       <div class="modal-body">
         <form action="">
@@ -121,9 +108,7 @@
     <label for="" class="form-label">Email</label>
     <input type="email" class="form-control" name="" value="" required>
   </div>
-  
   <div class="col-12  text-center mb-3">
-
     <button type="submit" class="btn btn-primary form-control">Log in</button>
   </div>
   <div class="col-12 mb-3 text-center">
@@ -141,18 +126,20 @@
     </div>
   </div>
 </div>
-  </div>
+<!-- login modal end -->
 
-  <div class="new-account">
-<!-- Modal -->
+<!-- Create Account Modal -->
+
 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="col-12 text-center">
+        <div class="col-10 text-center">
           <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-2 text-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </div>
       <div class="modal-body">
         <form action="">
@@ -191,7 +178,6 @@
                 By clicking Sign Up, you agree to our <a href="#">Terms, Privacy Policy</a>and <a href="#">Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.
               </p>
             </div>
-
             <div class="col-12  text-center mb-3">
               <button type="submit" class="btn btn-success px-5">Sign Up</button>
             </div>
@@ -201,18 +187,19 @@
     </div>
   </div>
 </div>
-</div>
+<!-- Create account modal end  -->
 
 <!-- forget password modal -->
-<!-- Modal -->
 <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="col-12">
+        <div class="col-10">
           <h5 class="modal-title" id="staticBackdropLabel">Find Your Account</h5>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-2 text-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </div>
       <div class="modal-body">
 <form action="">
@@ -228,12 +215,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-success">Search</button>
+        <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Search</button>
       </div>
     </div>
   </div>
 </div>
-<!-- end -->
+<!-- forget password modal end -->
 
   <!-- <div id="myModal" class="modal fade top-50" style="margin-top: -200px;">
     <div class="modal-dialog text-center" style="max-width: 1298px;">
@@ -257,6 +244,7 @@
         </div>
     </div>
 </div> -->
+
   <div class="w-100 d-flex flex-wrap">
     <div class="col">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -272,9 +260,7 @@
 
 
 
-
-  <section>
-    <div class="container-fluid">
+  <div class="container-fluid">
       <div class="row">
         <div class="col-12 text-center p-2 lorem-txt">
           <marquee behavior="" direction="">
@@ -284,11 +270,53 @@
           </marquee>
         </div>
       </div>
-    </div>
-  </section>
 
+      <div class="row g-1 bg-light text-center mb-3">
+        <div class="col-12 p-3 mt-3" style="background-color: #8C3939;">
+          <h5 class="p-2 text-white text-start mb-0 bg-yellow-800">Detailed DASHBOARD</h5>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card mb-1">
+            <div class="py-3 border-bottom"> <span class="text-muted">Number of Blocks Covered</span>
+              <h3 class="mt-2 mb-0 text-truncate">6845</h3>
+            </div>
+            <div class="py-3 text-truncate"> <span class="text-muted">SHGs Promoted <small>(In Lakh)</small></span>
+              <h3 class="mt-2 mb-0 text-truncate">78.5</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card mb-1">
+            <div class="py-3 border-bottom text-truncate"> <span class="text-muted">Households mobilised into SHGs <small>(In Lakh)</small></span>
+              <h3 class="mt-2 mb-0 text-truncate">852</h3>
+            </div>
+            <div class="py-3 text-truncate"> <span class="text-muted">No. of Community Cadre</span>
+              <h3 class="mt-2 mb-0 text-truncate">382505</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card mb-1">
+            <div class="py-3 border-bottom text-truncate"> <span class="text-muted">Masks manufactured by SHGs</span>
+              <h3 class="mt-2 mb-0 text-truncate">168927854</h3>
+            </div>
+            <div class="py-3 text-truncate"> <span class="text-muted">Protective Equipments manufactured by SHGs</span>
+              <h3 class="mt-2 mb-0 text-truncate">529741</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card mb-1">
+            <div class="py-3 border-bottom text-truncate"> <span class="text-muted">Sanitizer manufactured by SHGs <small>(In Lts) </small></span>
+              <h3 class="mt-2 mb-0 text-truncate">513059</h3>
+            </div>
+            <div class="py-3 text-truncate"> <span class="text-muted">Community Kitchen operational by SHGs</span>
+              <h3 class="mt-2 mb-0 text-truncate">122682</h3>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="container mt-3">
 
     <div class="row align-items-center bg-light text-center shadow p-3">
       <div class="col-md-7 col-12">
@@ -353,22 +381,22 @@
       <div class="col-lg-7 mb-3 shadow bg-light">
         <h2 class="mx-4 my-3">What's New</h2>
         <hr>
-        <div class="row mt-4">
+        <div class="row mt-4 justify-content-center">
 <div class="col-12">
-  <ul class="nav nav-pills nav-fill">
-    <li class="nav-item bg-danger  rounded">
-      <a class="nav-link text-white active" aria-current="page" href="#">Updates</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item bg-danger mx-4  rounded">
+      <a class="nav-link text-white" aria-current="page" href="#">Updates</a>
     </li>
-    <li class="nav-item bg-danger rounded">
+    <li class="nav-item bg-danger mx-4 rounded">
       <a class="nav-link text-white" href="#">Letters</a>
     </li>
-    <li class="nav-item bg-danger rounded">
+    <li class="nav-item bg-danger mx-4 rounded">
       <a class="nav-link text-white" href="#">Tenders</a>
     </li>
-    <li class="nav-item bg-danger rounded">
+    <li class="nav-item bg-danger mx-4 rounded">
       <a class="nav-link text-white" href="#">Events</a>
     </li>
-    <li class="nav-item bg-danger rounded">
+    <li class="nav-item bg-danger mx-4 rounded">
       <a class="nav-link text-white" href="#">Media</a>
     </li>
   </ul>
@@ -514,7 +542,7 @@
 
       <div class="col-lg-3 col-md-6 mb-3">
         <div class="card text-center" style="width: 15rem;">
-          <img src="img/ak.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <img src="img/ak.svg" class="card-img-top img-fluid w-50 m-auto" alt="...">
           <div class="card-body">
             <h5 class="card-title mb-3">National Repository</h5>
             <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
@@ -524,7 +552,7 @@
 
       <div class="col-lg-3 col-md-6 mb-3">
         <div class="card text-center" style="width: 15rem;">
-          <img src="img/file-list-3-fill.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <img src="img/file-list-3-fill.svg" class="card-img-top img-fluid w-50 m-auto" alt="">
           <div class="card-body">
             <h5 class="card-title mb-3">National Repository</h5>
             <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
@@ -534,7 +562,7 @@
 
       <div class="col-lg-3 col-md-6 mb-3">
         <div class="card text-center" style="width: 15rem;">
-          <img src="img/email_black_24dp.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <img src="img/email_black_24dp.svg" class="card-img-top img-fluid w-50 m-auto" alt="">
           <div class="card-body">
             <h5 class="card-title mb-3">National Repository</h5>
             <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
@@ -544,7 +572,7 @@
 
       <div class="col-lg-3 col-md-6 mb-3">
         <div class="card text-center" style="width: 15rem;">
-          <img src="img/auto_stories_black_24dp.svg" class="card-img-top w-50 mt-3 mb-3 m-auto" alt="">
+          <img src="img/auto_stories_black_24dp.svg" class="card-img-top img-fluid w-50 m-auto" alt="">
           <div class="card-body">
             <h5 class="card-title mb-3">National Repository</h5>
             <a href="#" class="btn btn-primary mb-3">Go somewhere</a>
@@ -552,6 +580,7 @@
         </div>
       </div>
     </div>
+
 
 
 
@@ -576,9 +605,45 @@
     </div>
   </div>
 
+  <div class="owl-carousel owl-theme">
+    <div class="item" style="width:200px">
+    <img src="./img/data-gov.webp" class="img-opacity img-fluid" alt="" srcset="">
+    </div>
+    <div class="item" style="width:150px">
+    <img src="./img/NGSP_Banner.webp" class="img-opacity img-fluid" alt="" srcset="">
+    </div>
+    <div class="item" style="width:200px">
+    <img src="./img/india-gov.webp" class="img-opacity img-fluid" alt="" srcset="">
+    </div>
+    <div class="item" style="width:200px">
+    <img src="./img/makeinindia.webp" class="img-opacity img-fluid" alt="" srcset="">
+    </div>
+    <div class="item" style="width:200px">
+    <img src="./img/mygov.webp" class="img-opacity img-fluid" alt="">
+    </div>
+    <div class="item" style="width:200px">
+    <img src="./img/digital-india.webp" class="img-opacity img-fluid" alt="">
+    </div>
+    <div class="item" style="width:200px">
+    <img src="./img/goidirectory.webp" class="img-opacity img-fluid" alt="">
+    </div>
+</div>
 
 
-  <footer class="mt-5">
+<div class="row">
+  <div class="col-lg-4">
+    <div class="card">
+      <div class="card-header">
+        hello
+        </div>
+        <div class="card-body">
+          <canvas id="myChart" style="display: block; box-sizing: border-box; height: 97px; width: 97px;"></canvas>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <footer>
     <div class="container-fluid">
       <div class="row footer-bg">
         <div class="col-12 mt-3 mini-footer">
@@ -599,7 +664,7 @@
     <div class="container-fluid ">
       <div class="row main-footer">
         <div class="col-lg-3 col-md-2 mt-4">
-          <img src="img/india-gov-in.png" class="ms-4 img-opacity" alt="">
+          <img src="img/india-gov-in.png" class="img-opacity img-fluid" alt="">
         </div>
         <div class="col-lg-2 col-md-2 mt-4">
           <ul class="list-unstyled footer-lh text-white-50">
@@ -647,6 +712,7 @@
     </div>
   </footer>
 
+
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
   <script>
@@ -659,8 +725,60 @@
         $("#staticBackdrop1").modal("toggle");
       });
     });
+
+    var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgba(0,0,255,1)",
+      data: xyValues
+    }]
+  },
+  options:{}
+});
+
+//     var ctx = document.getElementById('myChart').getContext('2d');
+// var chart = new Chart(ctx, {
+//     // The type of chart we want to create
+//     type: 'line',
+
+//     // The data for our dataset
+//     data: {
+//         labels: ["January", "February", "March", "April", "May", "June", "July"],
+//         datasets: [{
+//             label: "My First dataset",
+//             backgroundColor: 'rgb(255, 99, 132)',
+//             borderColor: 'rgb(255, 99, 132)',
+//             data: [0, 10, 5, 2, 20, 30, 45],
+//         }]
+//     },
+
+//     // Configuration options go here
+//     options: {}
+// });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./dist/owl.carousel.js"></script>
+  <script src="./dist/owl.carousel.min.js"></script>
+  <script src="./js/custom.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 </body>
 
 </html>
